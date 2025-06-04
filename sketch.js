@@ -9,13 +9,17 @@ let hearts = [];
 let showHearts = false;
 let myButton;
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(windowWidth, windowHeight);
   textSize(30);
   textAlign(CENTER, CENTER);
 
   myButton = createButton('Click me for lauv');
-  myButton.position(width / 2 - 85, 600);
+myButton.position(width / 2 - myButton.width / 2, height - 120);
 
   // Styling (applied immediately)
   myButton.style('background-color', '#FFB6C1');
@@ -38,7 +42,7 @@ function draw() {
   background('#F2DAEB');
   
   fill('deeppink');
-  text("Hi bob.", 400, 400);
+text("Hi bob.", width / 2, height / 2 - 100);
   
 // Sparkles falling from bottom
   if (frameCount % 5 === 0) {
@@ -72,7 +76,7 @@ if (textOpacity < 255) {
 
 fill(202, 154, 231, textOpacity); // soft purple with transparency
 textStyle(ITALIC);
-text(currentText, 400, textY);
+text(currentText, width / 2, height / 2 + 30);
 
   if (showHearts) {
     if (frameCount % 10 === 0) {
