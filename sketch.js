@@ -19,8 +19,10 @@ function setup() {
   textAlign(CENTER, CENTER);
 
   myButton = createButton('Click me for lauv');
-myButton.position(width / 2 - myButton.width / 2, height - 120);
-
+myButton.position(
+  windowWidth - myButton.width) / 2,
+  windowHeight * 0.75
+  );
   // Styling (applied immediately)
   myButton.style('background-color', '#FFB6C1');
   myButton.style('color', 'white');
