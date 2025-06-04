@@ -19,8 +19,8 @@ function setup() {
   textAlign(CENTER, CENTER);
 
   myButton = createButton('Click me for lauv');
-myButton.position(
-  windowWidth - myButton.width) / 2,
+  myButton.position(
+  windowWidth - myButton.width / 2,
   windowHeight * 0.75
   );
   // Styling (applied immediately)
