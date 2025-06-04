@@ -2,7 +2,7 @@ let sparkles = [];
 let fullMessage = "This is me saying I love you, in code.";
 let currentText = "";
 let charIndex = 0;
-let typingSpeed = 8; // adjust: lower = faster
+let typingSpeed = 6; // adjust: lower = faster
 let textOpacity = 0;
 let textY = 480;
 let hearts = [];
